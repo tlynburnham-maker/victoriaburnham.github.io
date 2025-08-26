@@ -1,10 +1,42 @@
-<!-- 
-Create a simple personal profile website. 
-Requirements:
-- A clean header with my name and a short tagline.
-- An "About Me" section with a profile photo on the left and a short bio on the right.
-- A "Contact" section with links for Email, GitHub, and LinkedIn.
-- Use an external CSS file (style.css) for styling.
-- Make the layout responsive and centered on the page.
-- Use soft colors and rounded corners for a friendly look.
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name – Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="name">Your Name</h1>
+      <p class="tagline">Short tagline or profession here</p>
+    </header>
+
+    <main class="container">
+      <section class="about">
+        <img
+          src="profile.jpg"
+          alt="Profile photo of Your Name"
+          class="profile-photo"
+        />
+        <div class="bio">
+          <h2>About Me</h2>
+          <p>
+            Write a short biography here. Mention your background, interests, or
+            anything else you’d like visitors to know about you.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul class="contact-links">
+          <li><a href="mailto:you@example.com">Email</a></li>
+          <li><a href="https://github.com/yourhandle">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
