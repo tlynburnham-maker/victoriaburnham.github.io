@@ -1,9 +1,103 @@
-/* 
-Style this personal profile site:
-- Center everything with a max width of 800px.
-- Use a light background and readable sans-serif font.
-- Add a header with a bold color strip.
-- Make the profile photo circular with a shadow.
-- Add hover effects on links.
-- Ensure it's responsive on mobile.
-*/
+:root {
+  --bg-color: #f7f7fa;
+  --primary-color: #5a67d8;
+  --text-color: #333;
+  --border-radius: 12px;
+  --max-width: 800px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  flex: 0 0 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-right: 1.5rem;
+}
+
+.bio {
+  flex: 1;
+}
+
+.contact {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.contact-links li {
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+
+.contact-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-links a:hover {
+  color: #3949ab;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
